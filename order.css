@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.nav-container {
+  height: 144px;
+}
+
+.month-box {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.month {
+  height: 40px;
+}
+.month p {
+  color: white;
+  padding: 0.5em;
+}
+.question img {
+  width: 65%;
+}
+.question {
+  max-width: 70px;
+}
+.month-container {
+  background-color: #3f51b5;
+}
+
+.postup-header {
+  margin: 3rem 0 2rem 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.napoveda-container {
+  flex-direction: column;
+  display: none;
+}
+
+.napoveda-container ol {
+  text-align: left;
+}
+
+.krok-postup-box {
+  margin: 2rem 0;
+}
+.btn-box {
+  margin-bottom: 2em;
+}
+.nastaveni {
+  padding: 0.5em 0 0.3em 0;
+}
+
+.nastaveni h5 {
+  font-size: 14px;
+}
+.nastaveni-active {
+  border-bottom: 2px solid #3f51b5;
+}
+
+.nahled {
+  width: 100%;
+}
+#file {
+  display: none;
+}
+.plus {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.upload-header {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.format-text {
+  color: #979797;
+  font-size: 13px;
+}
+.upload-box {
+  margin-top: 1em;
+  display: none;
+}
+
+.nahled-container {
+  margin-top: 2em;
+}
+.nahled-box {
+  flex-direction: column;
+}
+.nahled-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nahled-img-box img {
+  width: 20%;
+  border: 1px solid black;
+}
+
+:root {
+  --prm-color: #0381ff;
+  --prm-gray: #b1b1b1;
+}
+
+/* CSS */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.step-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--prm-gray);
+  transition: 0.4s;
+}
+
+.step-button[aria-expanded="true"] {
+  width: 60px;
+  height: 60px;
+  background-color: var(--prm-color);
+  color: #fff;
+}
+
+.done {
+  background-color: var(--prm-color);
+  color: #fff;
+}
+
+.step-item {
+  z-index: 10;
+  text-align: center;
+}
+
+#progress {
+  -webkit-appearance: none;
+  position: absolute;
+  width: 95%;
+  z-index: 5;
+  height: 10px;
+  margin-left: 18px;
+  margin-bottom: 18px;
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+  background-color: var(--prm-color);
+  transition: 0.5s ease;
+}
+
+#progress::-webkit-progress-bar {
+  background-color: var(--prm-gray);
+}

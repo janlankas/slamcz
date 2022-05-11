@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue";
+}
+
+.nav-container {
+  height: 144px;
+}
+
+.brand {
+  display: inline;
+  font-size: 20px;
+  color: white;
+}
+
+#sidemenu {
+  overflow-y: scroll;
+  width: 175px;
+  height: 100vh;
+}
+
+.menu-item:hover,
+.item-v:hover,
+.item-h:hover {
+  border-right: 3px solid #abe0ff;
+  background-color: #f1f1f1;
+}
+
+.menu-item,
+.item-v {
+  width: 153px;
+  min-height: 150px;
+  padding-top: 1em;
+  cursor: pointer;
+  padding-bottom: 2em;
+}
+
+.menu-img {
+  max-width: 100%;
+}
+
+.menu-header {
+  font-size: 1rem;
+}
+.item-h {
+  width: 153px;
+  min-height: 234px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  cursor: pointer;
+}
+
+.main-box {
+  max-width: 55%;
+}
+
+.main-img {
+  max-width: 90%;
+}
+
+.detail-container {
+  padding-top: 1.75em;
+}
+
+.detail-container h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+.option-picker {
+  width: 92%;
+  border: none;
+  color: rgba(0, 0, 0, 0.42);
+  border-bottom: 1px solid grey;
+  background-color: white;
+  padding-bottom: 5px;
+}
+
+.nahled-container {
+  padding-top: 21rem;
+}
+.img-pick {
+  max-width: 9vw;
+  min-width: 120px;
+}
+
+.img-box:first-child {
+  border-bottom: 3px solid #abe0ff;
+}
+.img-box:hover {
+  border-bottom: 3px solid #abe0ff;
+  cursor: pointer;
+}
+
+.upload {
+  float: right;
+}
+@media (max-width: 1210px) {
+  #sidemenu {
+    display: none;
+  }
+  .main-box {
+    max-width: 100%;
+  }
+}
